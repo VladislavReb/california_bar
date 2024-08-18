@@ -1,0 +1,10 @@
+.header_wrapper {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+.header_wrapper img {
+  width: 50px;
+}
+
+/*# sourceMappingURL=header.css.map */

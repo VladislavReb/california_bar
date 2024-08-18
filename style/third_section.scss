@@ -1,0 +1,122 @@
+.third_section {
+  overflow: visible;
+  padding: 100px 0;
+  background-color: #020F1C;
+
+  .container {
+    overflow: visible;
+  }
+
+  .ts_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ts_content {
+      width: 100%;
+      padding-top: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 65px;
+
+      &__item {
+        width: 100%;
+        overflow: visible;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        .item_menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 20px;
+
+          &__pos {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          }
+
+          &__pos1 {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            color: $main_color;
+
+            & div {
+              min-width: 220px;
+              display: flex;
+              gap: 15px;
+
+              &:nth-child(2n) {
+                min-width: 40px;
+              }
+            }
+          }
+
+          &__pos2 {
+            max-width: 350px;
+
+            & p {
+              color: white;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .item_img {
+          max-height: 300px;
+          border-radius: 10px;
+          overflow: hidden;
+          @include box_shadow;
+
+
+          & img {
+            max-width: 350px;
+            cursor: pointer;
+            transition-duration: 1s;
+
+            &:hover {
+              transform: scale(1.2);
+              transition-duration: 1s;
+            }
+          }
+        }
+      }
+
+      .ts_content__button {
+        width: 100%;
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        border: 1px solid $main_color;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+
+        .disable_b {
+          display: none;
+        }
+      }
+
+      .hidden_item {
+        height: 0;
+        opacity: 0;
+        transition: height 0.5s ease, opacity 3s ease;
+        display: none;
+      }
+
+      .hidden_item.active {
+        display: block;
+        height: auto;
+        opacity: 1;
+      }
+    }
+  }
+}

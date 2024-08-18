@@ -1,0 +1,10 @@
+.footer {
+  padding: 100px 0;
+}
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

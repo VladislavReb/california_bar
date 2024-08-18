@@ -1,0 +1,26 @@
+.footer {
+  padding: 100px 0 50px;
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    & h6 {
+      font-size: 25px;
+      font-weight: 900;
+      color: $main_color;
+    }
+
+    & a {
+      color: white;
+    }
+
+    .visit_card {
+      margin-top: 35px;
+      font-size: 14px;
+      text-decoration: underline;
+    }
+  }
+}

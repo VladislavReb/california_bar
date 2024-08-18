@@ -1,0 +1,28 @@
+.third_section {
+  padding: 100px 0;
+  background-color: #020F1C;
+}
+.third_section .ts_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third_section .ts_wrapper .ts_content {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.third_section .ts_wrapper .ts_content__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.third_section .ts_wrapper .ts_content__item .item_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=third_section.css.map */
